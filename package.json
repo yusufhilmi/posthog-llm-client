@@ -11,6 +11,8 @@
     "build": "tsc",
     "prepublishOnly": "npm run build",
     "lint": "eslint . --ext .ts",
+    "format": "prettier --write 'src/**/*.{ts,tsx,js,jsx,json}'",
+    "format:check": "prettier --check 'src/**/*.{ts,tsx,js,jsx,json}'",
     "test": "echo \"No tests specified\" && exit 0"
   },
   "keywords": [
@@ -33,6 +35,8 @@
     "@typescript-eslint/eslint-plugin": "^8.26.1",
     "@typescript-eslint/parser": "^8.26.1",
     "eslint": "^9.22.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
     "typescript": "^5.8.2"
   },
   "repository": {
