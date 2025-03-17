@@ -1,0 +1,46 @@
+{
+  "name": "posthog-llm",
+  "version": "0.1.0",
+  "description": "A lightweight SDK for tracing AI operations in your applications with PostHog",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "posthog",
+    "llm",
+    "ai",
+    "tracing",
+    "analytics",
+    "observability"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "posthog-node": "^3.6.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.24",
+    "@types/uuid": "^9.0.8",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^8.26.1",
+    "eslint": "^9.22.0",
+    "typescript": "^5.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/user/posthog-llm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/user/posthog-llm/issues"
+  },
+  "homepage": "https://github.com/user/posthog-llm#readme"
+}
